@@ -6,6 +6,7 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 module.exports = {
   entry: {
     background: './src/background.ts',
+    popup: './src/popup.ts',
   },
   plugins: [
     new CleanWebpackPlugin(),
@@ -23,6 +24,7 @@ module.exports = {
     new HtmlWebpackPlugin({
       template: path.join(__dirname, 'src', 'popup.html'),
       filename: 'popup.html',
+      chunks: ['popup'],
     }),
   ],
   module: {
