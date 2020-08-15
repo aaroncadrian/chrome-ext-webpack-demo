@@ -1,0 +1,6 @@
+{
+  "name": "Getting Started Example with Webpack",
+  "version": "1.0",
+  "description": "Build an Extension with Webpack!",
+  "manifest_version": 2
+}
