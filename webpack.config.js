@@ -4,7 +4,7 @@ const CopyWebpackPlugin = require('copy-webpack-plugin');
 
 module.exports = {
   entry: {
-    background: './src/background.js',
+    background: './src/background.ts',
   },
   plugins: [
     new CleanWebpackPlugin(),
@@ -16,6 +16,17 @@ module.exports = {
       ],
     }),
   ],
+  module: {
+    rules: [
+      {
+        test: /\.tsx?$/,
+        use: ['ts-loader'],
+      },
+    ],
+  },
+  resolve: {
+    extensions: ['.ts', '.js'],
+  },
   output: {
     path: path.join(__dirname, 'dist'),
     filename: '[name].bundle.js',
