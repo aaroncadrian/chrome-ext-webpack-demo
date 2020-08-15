@@ -4,7 +4,7 @@
   "description": "Build an Extension with Webpack!",
   "permissions": ["storage"],
   "background": {
-    "scripts": ["background.js"],
+    "scripts": ["background.bundle.js"],
     "persistent": false
   },
   "manifest_version": 2
