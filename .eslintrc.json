@@ -16,6 +16,7 @@
   "rules": {
     "prettier/prettier": "error",
     "prefer-arrow-callback": "error",
-    "no-extra-boolean-cast": "off"
+    "no-extra-boolean-cast": "off",
+    "no-restricted-syntax": "off"
   }
 }

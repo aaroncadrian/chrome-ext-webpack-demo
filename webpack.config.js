@@ -7,6 +7,7 @@ module.exports = {
   entry: {
     background: './src/background/background.ts',
     popup: './src/popup/popup.ts',
+    options: './src/options_page/options.ts',
   },
   plugins: [
     new CleanWebpackPlugin(),
@@ -25,6 +26,11 @@ module.exports = {
       template: path.join(__dirname, 'src', 'popup', 'popup.html'),
       filename: 'popup.html',
       chunks: ['popup'],
+    }),
+    new HtmlWebpackPlugin({
+      template: path.join(__dirname, 'src', 'options_page', 'options.html'),
+      filename: 'options.html',
+      chunks: ['options'],
     }),
   ],
   module: {
