@@ -15,6 +15,7 @@
   "plugins": ["@typescript-eslint", "prettier"],
   "rules": {
     "prettier/prettier": "error",
-    "prefer-arrow-callback": "error"
+    "prefer-arrow-callback": "error",
+    "no-extra-boolean-cast": "off"
   }
 }
