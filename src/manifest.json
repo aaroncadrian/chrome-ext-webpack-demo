@@ -2,7 +2,7 @@
   "name": "Getting Started Example with Webpack",
   "version": "1.0",
   "description": "Build an Extension with Webpack!",
-  "permissions": ["declarativeContent", "storage"],
+  "permissions": ["activeTab", "declarativeContent", "storage"],
   "background": {
     "scripts": ["background.bundle.js"],
     "persistent": false
