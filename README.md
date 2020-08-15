@@ -1,6 +1,8 @@
 # chrome-ext-webpack-demo
 
-A demo Chrome Extension built with Webpack
+A demo Chrome Extension built with Webpack and TypeScript.
+
+This extension follows the [Getting Started Tutorial](https://developer.chrome.com/extensions/getstarted) from Chrome's developer documentation.
 
 ## Getting Started
 
